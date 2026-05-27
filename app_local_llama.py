@@ -46,14 +46,14 @@ except Exception:
 
 # ============== CONFIG ==============
 API_HOST = os.getenv("OLLAMA_API_HOST", "http://127.0.0.1:11434")
-MODEL = os.getenv("OLLAMA_MODEL", "gpt-oss:20b") 
+MODEL = os.getenv("OLLAMA_MODEL", "ollama_model_name") 
 
 DB_PATH = os.getenv("DB_PATH", "vector_db")
 os.makedirs(DB_PATH, exist_ok=True)
 os.makedirs("uploads", exist_ok=True)
 
 # Tavily key
-os.environ.setdefault("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY", "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"))
+os.environ.setdefault("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY", "your_tavily_key"))
 
 # ============== DATABASE ==============
 DB_FILE = "history.db"
