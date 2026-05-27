@@ -29,7 +29,7 @@ Apex RAG is a powerful, lightweight Retrieval-Augmented Generation (RAG) applica
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Saravananv10/Apex-chat
    cd ollama_rag
    ```
 
