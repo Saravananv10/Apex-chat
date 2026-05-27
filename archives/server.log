@@ -1,0 +1,59 @@
+nohup: ignoring input
+/home/blu-bridge007/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.5.0) or chardet (7.4.3)/charset_normalizer (3.4.3) doesn't match a supported version!
+  warnings.warn(
+2026-05-26 16:10:47,574 - INFO - 🔹 Initializing Cloud-Lite Embeddings & Chroma DB...
+2026-05-26 16:10:47,608 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+ * Serving Flask app 'app_local_llama'
+ * Debug mode: off
+2026-05-26 16:10:47,695 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.101.0.193:8080
+2026-05-26 16:10:47,695 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-26 16:11:07,445 - INFO - 10.101.0.193 - - [26/May/2026 16:11:07] "GET / HTTP/1.1" 200 -
+2026-05-26 16:11:07,638 - INFO - 10.101.0.193 - - [26/May/2026 16:11:07] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:10,743 - INFO - 10.101.0.193 - - [26/May/2026 16:11:10] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:10,745 - INFO - 10.101.0.193 - - [26/May/2026 16:11:10] "GET /history/conv_1779791843415 HTTP/1.1" 200 -
+2026-05-26 16:11:16,712 - INFO - ⚡ Starting Parallel Retrieval (RAG: True, Web: True)
+/media/blu-bridge007/WET-FILES/rag_web_app/ollama_rag/app_local_llama.py:149: LangChainDeprecationWarning: The method `BaseRetriever.get_relevant_documents` was deprecated in langchain-core 0.1.46 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  return retriever.get_relevant_documents(query)
+2026-05-26 16:11:16,715 - INFO - 🌐 Web Search: who is the chief minister of tamil nadu right now
+/home/blu-bridge007/.local/lib/python3.10/site-packages/langchain_core/globals.py:148: UserWarning: Importing debug from langchain root module is no longer supported. Please use langchain.globals.set_debug() / langchain.globals.get_debug() instead.
+  old_debug = langchain.debug
+2026-05-26 16:11:22,767 - INFO - ⏱️ Parallel Retrieval finished in 6.06s
+2026-05-26 16:11:22,769 - INFO - 📜 Found 2 history messages for conversation conv_1779791843415
+2026-05-26 16:11:22,772 - INFO - 10.101.0.193 - - [26/May/2026 16:11:22] "POST /ask HTTP/1.1" 200 -
+2026-05-26 16:11:42,262 - INFO - 10.101.0.193 - - [26/May/2026 16:11:42] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:42,263 - INFO - 10.101.0.193 - - [26/May/2026 16:11:42] "GET /history/conv_1779791636457 HTTP/1.1" 200 -
+2026-05-26 16:11:42,885 - INFO - 10.101.0.193 - - [26/May/2026 16:11:42] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:42,886 - INFO - 10.101.0.193 - - [26/May/2026 16:11:42] "GET /history/conv_1779791843415 HTTP/1.1" 200 -
+2026-05-26 16:11:44,016 - INFO - 10.101.0.193 - - [26/May/2026 16:11:44] "GET /history/conv_1779791636457 HTTP/1.1" 200 -
+2026-05-26 16:11:44,018 - INFO - 10.101.0.193 - - [26/May/2026 16:11:44] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:44,584 - INFO - 10.101.0.193 - - [26/May/2026 16:11:44] "GET /history/conv_1779791843415 HTTP/1.1" 200 -
+2026-05-26 16:11:44,585 - INFO - 10.101.0.193 - - [26/May/2026 16:11:44] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:47,375 - INFO - 10.101.0.193 - - [26/May/2026 16:11:47] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:47,377 - INFO - 10.101.0.193 - - [26/May/2026 16:11:47] "GET /history/conv_1779790536557 HTTP/1.1" 200 -
+2026-05-26 16:11:49,347 - INFO - 10.101.0.193 - - [26/May/2026 16:11:49] "GET /history/conv_1779790538260 HTTP/1.1" 200 -
+2026-05-26 16:11:49,348 - INFO - 10.101.0.193 - - [26/May/2026 16:11:49] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:50,828 - INFO - 10.101.0.193 - - [26/May/2026 16:11:50] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:50,829 - INFO - 10.101.0.193 - - [26/May/2026 16:11:50] "GET /history/conv_1779791636457 HTTP/1.1" 200 -
+2026-05-26 16:11:53,647 - INFO - 10.101.0.193 - - [26/May/2026 16:11:53] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:11:53,647 - INFO - 10.101.0.193 - - [26/May/2026 16:11:53] "GET /history/conv_1779791843415 HTTP/1.1" 200 -
+2026-05-26 16:12:22,331 - INFO - ⚡ Starting Parallel Retrieval (RAG: True, Web: True)
+2026-05-26 16:12:22,332 - INFO - 🌐 Web Search: who is the chief minister of tamil nadu right now 26 may 2026
+2026-05-26 16:12:28,333 - INFO - ⏱️ Parallel Retrieval finished in 6.00s
+2026-05-26 16:12:28,334 - INFO - 📜 Found 4 history messages for conversation conv_1779791843415
+2026-05-26 16:12:28,336 - INFO - 10.101.0.193 - - [26/May/2026 16:12:28] "POST /ask HTTP/1.1" 200 -
+2026-05-26 16:12:47,710 - INFO - 10.101.0.193 - - [26/May/2026 16:12:47] "GET /history/conv_1779791636457 HTTP/1.1" 200 -
+2026-05-26 16:12:47,711 - INFO - 10.101.0.193 - - [26/May/2026 16:12:47] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:12:49,028 - INFO - 10.101.0.193 - - [26/May/2026 16:12:49] "GET /history/conv_1779791843415 HTTP/1.1" 200 -
+2026-05-26 16:12:49,029 - INFO - 10.101.0.193 - - [26/May/2026 16:12:49] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:13:36,228 - INFO - ⚡ Starting Parallel Retrieval (RAG: True, Web: True)
+2026-05-26 16:13:36,231 - INFO - 🌐 Web Search: what is the weather right now in chennai
+2026-05-26 16:13:41,253 - INFO - ⏱️ Parallel Retrieval finished in 5.02s
+2026-05-26 16:13:41,254 - INFO - 📜 Found 6 history messages for conversation conv_1779791843415
+2026-05-26 16:13:41,258 - INFO - 10.101.0.193 - - [26/May/2026 16:13:41] "POST /ask HTTP/1.1" 200 -
+2026-05-26 16:14:03,953 - INFO - 10.101.0.193 - - [26/May/2026 16:14:03] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:14:03,954 - INFO - 10.101.0.193 - - [26/May/2026 16:14:03] "GET /history/conv_1779790538260 HTTP/1.1" 200 -
+2026-05-26 16:14:04,715 - INFO - 10.101.0.193 - - [26/May/2026 16:14:04] "GET /conversations?user_id=1 HTTP/1.1" 200 -
+2026-05-26 16:14:04,717 - INFO - 10.101.0.193 - - [26/May/2026 16:14:04] "GET /history/conv_1779791843415 HTTP/1.1" 200 -

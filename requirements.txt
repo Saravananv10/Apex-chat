@@ -1,0 +1,11 @@
+flask
+requests
+langchain
+langchain-community
+langchain-chroma
+langchain-huggingface
+chromadb
+pypdf
+tavily-python
+python-dotenv
+flask-cors

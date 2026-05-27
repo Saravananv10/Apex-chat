@@ -1,0 +1,17 @@
+[package]
+name = "karuppan007/sarchat"
+version = "0.1.0"
+description = "Premium AI Assistant"
+license = "MIT"
+
+[[run]]
+name = "main"
+command = "python3 app_local_llama.py"
+
+[env]
+PYTHONUNBUFFERED = "1"
+PORT = "8080"
+
+[http_server]
+port = 8080
+path = "/"

@@ -1,0 +1,13 @@
+# Ignore massive folders
+vector_db/
+uploads/
+ngrok
+bore
+pinggy.log
+bore.log
+lt.log
+serveo.log
+*.tgz
+*.zip
+__pycache__/
+.git/

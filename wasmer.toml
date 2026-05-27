@@ -1,0 +1,12 @@
+[package]
+name = "karuppan007/apexchat"
+version = "0.1.4"
+description = "Super-speed Static Frontend"
+
+[[run]]
+name = "main"
+command = "static-server dist"
+
+[http_server]
+port = 8080
+path = "/"
